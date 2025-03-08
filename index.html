@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manartha AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Existing styles */
+        .suggestion-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .suggestion-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Manartha Varsity AI Assistant (Jaikaran S)</h1>
+        <form id="assistantForm" class="input-form">
+            <label for="role">Role/Title:</label>
+            <input type="text" id="role" name="role" placeholder="e.g., Product Manager" required>
+
+            <label for="company">Company/Organization:</label>
+            <input type="text" id="company" name="company" placeholder="e.g., Tech Innovations Inc." required>
+
+            <label for="years">Years of Experience:</label>
+            <input type="text" id="years" name="years" placeholder="e.g., 5" required>
+
+            <label for="skills">Key Skills (comma-separated):</label>
+            <input type="text" id="skills" name="skills" placeholder="e.g., Agile, Data Analysis, Leadership" required>
+
+            <label for="achievements">Key Achievements/Highlights:</label>
+            <textarea id="achievements" name="achievements" placeholder="e.g., Launched new product, Increased user engagement" required></textarea>
+
+            <button type="submit" class="generate-btn">Generate Suggestions</button>
+            <button type="button" onclick="submitForm()">Submit Form</button>
+        </form>
+        <div id="result" class="result-box"></div>
+        <div id="actionButtons">
+            <button onclick="updateFields()">Update</button>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
