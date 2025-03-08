@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 break;
         }
 
-        const url = 'http://localhost:3001/generate';
+        const url = 'https://manartha-ai-assistance-backend.onrender.com';
         try {
             const response = await fetch(url, {
                 method: 'POST',
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
             achievements: document.getElementById('achievements').value
         };
     
-        fetch('http://localhost:3001/save-form', { // Ensure correct URL
+        fetch('https://manartha-ai-assistance-backend.onrender.com', { // Ensure correct URL
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
